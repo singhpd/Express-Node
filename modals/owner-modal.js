@@ -5,8 +5,6 @@ const ownerSchema =  mongoose.Schema({
     Name:String,
     email:String,
     password:String,
-    products:[],
-    picture:String,
     gstin:String
 
 })

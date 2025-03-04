@@ -13,6 +13,11 @@ app.use(express.json())
 app.use(express.urlencoded({extended:true}))
 app.use(express.static(path.join(__dirname,"public")))
 
+
+app.get("/",(req,res)=>{
+    res.send("Welcome to  Scatch :-)")
+})
+
 app.use("/owner",ownerRouter)
 app.use("/products",productsRouter)
 app.use("/users",usersRouter)
